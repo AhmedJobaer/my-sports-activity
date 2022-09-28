@@ -9,9 +9,9 @@ const Activity = (props) => {
             <div className='activity-info'>
                 <p>{name}</p>
                 <p>{info}</p>
-                <p>Duration: {duration}</p>
+                <p>Duration: {duration} minutes</p>
             </div>
-            <button>Add To List</button>
+            <button className='btn-cart'>Add To List</button>
         </div>
     );
 };

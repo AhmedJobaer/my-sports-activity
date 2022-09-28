@@ -1,0 +1,39 @@
+.cart {
+    background: antiquewhite;
+    margin-top: 400px;
+    padding: 20px;
+}
+
+.cart-container img {
+    width: 60px;
+    height: 60px;
+}
+
+.cart-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    margin-left: 10px;
+}
+
+.profile-name {
+    margin-bottom: 0;
+}
+
+.location {
+    margin-top: 0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px
+}
+
+.excution {
+    display: flex;
+    justify-content: space-between;
+}

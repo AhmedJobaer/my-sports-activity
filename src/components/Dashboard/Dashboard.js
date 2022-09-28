@@ -15,18 +15,21 @@ const Dashboard = () => {
     return (
 
         <div>
-            <div className='title'>
-                <h1>My-Sports-Activity</h1>
-                <h2>Select today's exercise</h2>
-            </div>
+
             <div className='dashboard-container'>
-                <div className='activity-container' >
-                    {
-                        activities.map(activity => <Activity
-                            key={activity.id}
-                            activity={activity}
-                        ></Activity>)
-                    }
+                <div  >
+                    <div className='title'>
+                        <h1>My-Sports-Activity</h1>
+                        <h2>Select today's exercise</h2>
+                    </div >
+                    <div className='activity-container'>
+                        {
+                            activities.map(activity => <Activity
+                                key={activity.id}
+                                activity={activity}
+                            ></Activity>)
+                        }
+                    </div>
                 </div>
                 <div className='cart-container'>
                     <Cart></Cart>

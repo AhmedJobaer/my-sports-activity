@@ -6,10 +6,10 @@
 .activity-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 100px;
+    margin-left: 200px;
     gap: 5px;
 }
 
 .title {
-    margin-left: 100px;
+    margin-left: 200px;
 }
