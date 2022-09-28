@@ -1,9 +1,12 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = () => {
+
+const Cart = ({ cart }) => {
     return (
-        <div className='cart'>
+        <div>
+            <h4>This cart</h4>
+            <p>selected item: {cart.length}</p>
             <div className='cart-container'>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvT59urBwJHSQXaH3g7IlcOkYg6qgN252OhLouqTxZ66ROulvZ_5Xs1LnMgUG_h_JCP8&usqp=CAU" alt="" />
                 <div className='profile'>

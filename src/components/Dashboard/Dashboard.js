@@ -1,16 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
-import Cart from '../Activity/Cart/Cart';
+import Cart from '../Cart/Cart';
+
 import './Dashboard.css'
 
 const Dashboard = () => {
 
     const [activities, setActivity] = useState([]);
+    const [cart, setCart] = useState([]);
+
     useEffect(() => {
         fetch('fakeDb.json')
             .then(res => res.json())
             .then(data => setActivity(data))
     }, [])
+
+
+    const handelAddToCart = (activity) => {
+        console.log(activity);
+        const newCart = [...cart, activity]
+        setCart(newCart);
+    }
+
 
     return (
 
@@ -27,12 +38,13 @@ const Dashboard = () => {
                             activities.map(activity => <Activity
                                 key={activity.id}
                                 activity={activity}
+                                handelAddToCart={handelAddToCart}
                             ></Activity>)
                         }
                     </div>
                 </div>
                 <div className='cart-container'>
-                    <Cart></Cart>
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
         </div>

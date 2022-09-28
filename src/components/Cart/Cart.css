@@ -1,18 +1,12 @@
-.cart {
-    background: antiquewhite;
-    margin-top: 400px;
-    padding: 20px;
-}
-
 .cart-container img {
     width: 60px;
     height: 60px;
+    margin-left: 20px;
 }
 
 .cart-container {
-    height: 100px;
     display: flex;
-    align-items: center;
+
 }
 
 .profile {
@@ -26,6 +20,7 @@
 .location {
     margin-top: 0;
 }
+
 
 .info {
     display: grid;
