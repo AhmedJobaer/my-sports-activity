@@ -17,7 +17,7 @@ const Dashboard = () => {
 
 
     const handelAddToCart = (activity) => {
-        console.log(activity);
+        //console.log(activity);
         const newCart = [...cart, activity]
         setCart(newCart);
     }

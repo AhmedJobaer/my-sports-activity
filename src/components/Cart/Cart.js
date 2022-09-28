@@ -2,12 +2,19 @@ import React from 'react';
 import './Cart.css'
 
 
-const Cart = ({ cart }) => {
+const Cart = (props) => {
+    const { cart } = props;
+    //console.log(cart);
+    let totalTime = 0;
+    for (const activity of cart) {
+        totalTime = totalTime + activity.duration;
+    }
+
     return (
-        <div>
+        <div className='cart'>
             <h4>This cart</h4>
             <p>selected item: {cart.length}</p>
-            <div className='cart-container'>
+            <div className='cart-bar'>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvT59urBwJHSQXaH3g7IlcOkYg6qgN252OhLouqTxZ66ROulvZ_5Xs1LnMgUG_h_JCP8&usqp=CAU" alt="" />
                 <div className='profile'>
                     <h2 className='profile-name'>Asif Ahmed</h2>
@@ -37,7 +44,7 @@ const Cart = ({ cart }) => {
             <h3>Exercise Details</h3>
             <div className='excution'>
                 <h4>Exercise Time</h4>
-                <p>0 <small>Min</small></p>
+                <p>{totalTime} <small>Min</small></p>
             </div>
             <div className='excution'>
                 <h4>Break Time Time</h4>
