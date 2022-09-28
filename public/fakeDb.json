@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Swimming",
+        "duration": 30,
+        "img": "https://cdn.britannica.com/66/162466-131-47ADB66F/Man-butterfly-stroke-pool.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Walking",
+        "duration": 30,
+        "img": "https://images.indianexpress.com/2021/06/walking_pixabay_1200.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Running",
+        "duration": 30,
+        "img": "https://www.news-medical.net/images/Article_Images/ImageForArticle_22980_16600577310868068.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Hiking",
+        "duration": 30,
+        "img": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2019-8/couple-hiking-mountain-climbing-1296x728-header.jpg?w=1155&h=1528"
+    },
+    {
+        "id": "5",
+        "name": "Playing Cricket",
+        "duration": 30,
+        "img": "https://imgnew.outlookindia.com/public/uploads/articles/2019/10/26/Shakib-AP_630_630.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Playing Football",
+        "duration": 30,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKEMNuySYTpvhCO1PlE0YhqtaEetX2kIWWGEESxHrykOb-2FcN1Yprx9U5XmTax43yUg&usqp=CAU"
+    }
+]
