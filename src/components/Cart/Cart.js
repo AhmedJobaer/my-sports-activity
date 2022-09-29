@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-/* import { addToDb, getStoredCart } from '../../utilities/fakedb'; */
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 
 
 import './Cart.css'
@@ -16,24 +16,28 @@ const Cart = (props) => {
         totalTime = totalTime + activity.duration;
     }
 
-    /*     useEffect(() => {
-            const storedCart = getStoredCart();
-            const addedTime = setBreakTime();
-            console.log(storedCart);
-    
-        }, []) */
+
+    const [brTime, setBrTime] = useState([])
+    useEffect(() => {
+
+        //console.log(brTime);
+        //localStorage.setItem('brTime', brTime);
+        const getItem = getStoredCart();
+
+    }, [brTime])
 
 
 
-
-    const [breakTime, setBreakTime] = useState(0)
+    //const [breakTime, setBreakTime] = useState(0)
 
 
 
     let newBreakTime = 0;
     const breakTimeHandel = (time) => {
         newBreakTime = newBreakTime + time;
-        setBreakTime(newBreakTime);
+        addToDb(newBreakTime);
+        setBrTime(newBreakTime);
+
         newBreakTime = 0;
     }
 
@@ -75,7 +79,7 @@ const Cart = (props) => {
             </div>
             <div className='excution'>
                 <h4>Break Time</h4>
-                <p>{breakTime}<small> Min</small></p>
+                <p>{brTime}<small> Min</small></p>
             </div>
             <button className='btn-complete' onClick={notify}>Activity Completed</button>
             <ToastContainer />
