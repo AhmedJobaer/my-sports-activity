@@ -37,8 +37,6 @@ const Cart = (props) => {
 
     return (
         <div className='cart'>
-            <h4>This cart</h4>
-            <p>selected item: {cart.length}</p>
             <div className='cart-bar'>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvT59urBwJHSQXaH3g7IlcOkYg6qgN252OhLouqTxZ66ROulvZ_5Xs1LnMgUG_h_JCP8&usqp=CAU" alt="" />
                 <div className='profile'>
