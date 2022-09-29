@@ -8,7 +8,7 @@ const Activity = ({ activity, handelAddToCart }) => {
         <div className='activity'>
             <img src={img} alt="" />
             <div className='activity-info'>
-                <p>{name}</p>
+                <h3>{name}</h3>
                 <p>{info}</p>
                 <p>Duration: {duration} minutes</p>
             </div>

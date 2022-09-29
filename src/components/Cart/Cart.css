@@ -41,3 +41,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+.btn-second {
+    padding: 8PX;
+    margin-right: 5PX;
+    border-radius: 5PX;
+}
+
+.btn-complete {
+    background-color: rgb(240, 236, 230);
+    padding: 5px 20px;
+    border: 2ps solid white;
+    border-radius: 5px;
+}
