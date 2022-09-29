@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+/* import { addToDb, getStoredCart } from '../../utilities/fakedb'; */
+
+
 import './Cart.css'
 
 
@@ -11,9 +13,20 @@ const Cart = (props) => {
     for (const activity of cart) {
         totalTime = totalTime + activity.duration;
     }
-    const notify = () => toast("Wow so easy!");
+
+    /*     useEffect(() => {
+            const storedCart = getStoredCart();
+            const addedTime = setBreakTime();
+            console.log(storedCart);
+    
+        }, []) */
+
+
+
 
     const [breakTime, setBreakTime] = useState(0)
+
+
 
     let newBreakTime = 0;
     const breakTimeHandel = (time) => {
@@ -60,9 +73,9 @@ const Cart = (props) => {
             </div>
             <div className='excution'>
                 <h4>Break Time</h4>
-                <p>{breakTime} <small>Min</small></p>
+                <p>{breakTime}<small> Min</small></p>
             </div>
-            <button onClick={notify}>Activity Completed</button>
+            <button>Activity Completed</button>
         </div>
     );
 };
